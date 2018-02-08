@@ -112,13 +112,11 @@ document.write(day[d.getDay()]+" " +d.getDate()+ " " + month[d.getMonth()]
 
 						В 2017 году KutyaBankIzrail (Израиль) был назван Самым инновационным Банком в мире на церемонии награждения <strong>BAI Innovation Awards</strong>.
 					</p>
-						  <form action="submit.php" method="POST">
-    						<input name="email" placeholder="Email"><br>
-    						<input name="name" placeholder="Ник нейм без _"><br>
-    						<input name="phone" placeholder="Телефон в игре"><br>
-    						<textarea name="message" placeholder="Сообщение"></textarea><br>
-    						<input type="submit" value="Отправить сообщение">
-  						</form>
+						  <form id="form">
+						<input type="text" name="name" placeholder="Ваше имя" required /><br/>
+						<input type="text" name="phone" placeholder="Ваш телефон" required /><br/>
+						<textarea  name="text" placeholder="Сообщение" required></textarea><br>
+						<button>Отправить</button>
 				</section>
 
 				<section class="section">
