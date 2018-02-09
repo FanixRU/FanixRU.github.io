@@ -133,21 +133,34 @@ document.write(day[d.getDay()]+" " +d.getDate()+ " " + month[d.getMonth()]
 							Все <a href="#" class="link">гарантии тут.</a><strong>Следуйте строго образцу, отвечайте предельно честно. После отправки ожидайте, с вами свяжутся по телефону или по Email для окончального ответа.Если заявление одобрили - приходите в банк за деньгами с паспортом. В случае, если сумма займа больше 2000$, будет созвана коллегия банкиров, где будет решаться ваш вопрос.Вам напишут к какому времени нужно подойти и куда.</strong>
 						</p>
 						<h2 class="headline">Образец заявления потребительского кредита:</h2>
-						<img src="../images/primerbank.jpg" alt="" class="icon_primerzav">
-						<h2 class="headline">Отправить заявку:</h2>
-						
-<div id="form_85815_1"></div>
-<script type="text/javascript">
-   (function (d, w, c) {
-       (w[c] = w[c] || []).push({formId:85815,host:"formdesigner.ru",formHeight:1012, el: "form_85815_1", center: 0});
-       var s = d.createElement("script"), g = "getElementsByTagName";
-       s.type = "text/javascript"; s.charset="UTF-8"; s.async = true;
-       s.src = (d.location.protocol == "https:" ? "https:" : "http:")+"//formdesigner.ru/js/iform.js";
-       var h=d[g]("head")[0] || d[g]("body")[0];
-       h.appendChild(s);
-   })(document, window, "fdforms");
-</script>			
 
+						<h2 class="headline">Отправить заявку:</h2>
+														
+					<form class="contact_form" action="submit.php" method="post" name="contact_form">
+    <ul>
+        <li>
+             <h2>Форма заявки</h2>
+             <span class="required_notification">* Не все поля заполнены</span>
+        </li>
+        <li>
+            <label for="name">Name:</label>
+            <input type="text"  placeholder="John Doe" required />
+        </li>
+        <li>
+            <label for="email">Email:</label>
+            <input type="email" name="email" placeholder="email@example.com" required />
+            <span class="form_hint">Proper format "name@something.com"</span>
+        </li>
+        
+        <li>
+            <label for="message">Message:</label>
+            <textarea name="message" cols="40" rows="6" required ></textarea>
+        </li>
+        <li>
+        	<button class="submit" type="submit">Submit Form</button>
+        </li>
+    </ul>
+</form>
 				
 
 
